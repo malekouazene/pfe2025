@@ -1,0 +1,251 @@
+.document-manager {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-document-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.add-document-btn:hover {
+  background-color: #45a049;
+}
+
+.document-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.document-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.document-icon {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.document-info h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+}
+
+.document-info p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.document-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.view-btn, .delete-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.view-btn {
+  background-color: #2196F3;
+  color: white;
+}
+
+.view-btn:hover {
+  background-color: #0b7dda;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #da190b;
+}
+
+/* Modal styles */
+.document-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.document-modal {
+  background-color: white;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 900px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.document-modal-header {
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.document-modal-header button {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.document-modal-content {
+  padding: 20px;
+  overflow: auto;
+  flex-grow: 1;
+}
+
+.document-modal-footer {
+  padding: 15px 20px;
+  border-top: 1px solid #ddd;
+  font-size: 0.9em;
+}
+
+.download-prompt {
+  text-align: center;
+  padding: 20px;
+}
+
+.download-button {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.download-button:hover {
+  background-color: #45a049;
+}
+
+/* Add document form styles */
+.add-document-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.form-actions button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-actions button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.form-actions button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.form-actions button[type="button"] {
+  background-color: #f44336;
+  color: white;
+}
+
+.form-actions button[type="button"]:hover {
+  background-color: #da190b;
+}
+
+.file-input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.custom-file-input {
+  background-color: #2196F3;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.custom-file-input:hover {
+  background-color: #0b7dda;
+}
+
+.file-name {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.loading, .no-docs {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.1em;
+}

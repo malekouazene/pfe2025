@@ -1,0 +1,7 @@
+@prefix ex: <http://example.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ex:ResetProcedure a owl:Class ;
+    owl:deprecated true .
+
+ex:FirmwareX150 ex:hasFirmware "2.1" .

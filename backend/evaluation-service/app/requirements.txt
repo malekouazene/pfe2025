@@ -1,0 +1,10 @@
+
+
+Flask==2.3.2
+Flask-PyMongo==2.3.0
+pymongo==4.6.1
+python-dotenv==1.0.1
+dnspython==2.4.2
+PyMuPDF==1.23.9        # Pour parser les PDF (optionnel si tu veux parser du contenu réel)
+markdown2==2.4.12      # Pour parser les fichiers Markdown (optionnel aussi)
+rdflib==7.0.0

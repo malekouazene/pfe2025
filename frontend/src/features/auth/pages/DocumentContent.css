@@ -1,0 +1,104 @@
+.document-content-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.document-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 40px;
+}
+
+.document-loading .spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+.document-error {
+  text-align: center;
+  padding: 20px;
+  color: #e74c3c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.document-error .error-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #e74c3c;
+}
+
+.word-content {
+  padding: 20px;
+  line-height: 1.6;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.word-content p {
+  margin-bottom: 1em;
+}
+
+.unsupported-file {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #666;
+}
+
+.document-actions {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+.download-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: #3498db;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.download-link:hover {
+  background: #2980b9;
+}
+
+iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,93 @@
+
+.features-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .section-title {
+   color: #2a2d7c;;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .features-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .nav-button {
+    background:linear-gradient(to right, #4c6ef5, #9c88ff);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background:linear-gradient(to right, #4c6ef5, #9c88ff);
+    transform: scale(1.1);
+  }
+  
+  .feature-content {
+    width: 100%;
+    min-height: 250px;
+    position: relative;
+  }
+  
+  .feature-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  
+  .feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-card h3 {
+    color:linear-gradient(to right, #4c6ef5, #9c88ff);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .feature-card p {
+    color: #7f8c8d;
+    line-height: 1.6;
+  }
+  
+  .feature-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #bdc3c7;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .dot.active {
+    background:linear-gradient(to right, #4c6ef5, #9c88ff);
+    transform: scale(1.2);
+  }

@@ -1,0 +1,121 @@
+/* Styles modernes sans styled-components */
+.why-us-modern {
+  background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
+  padding: 40px 0;
+  position: relative;
+
+}
+
+.modern-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.modern-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2a2d7c;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.modern-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  border-radius: 2px;
+}
+
+.modern-subtitle {
+  font-size: 1.25rem;
+  color: #6b7280;
+  max-width: 700px;
+  margin: 0 auto 60px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.modern-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.modern-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.modern-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.modern-icon-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  background: linear-gradient(135deg, #f6f9ff 0%, #eef4ff 100%);
+  color: #2575fc;
+  font-size: 2rem;
+  box-shadow: 0 5px 15px rgba(37, 117, 252, 0.2);
+  transition: all 0.3s ease;
+}
+
+.modern-card:hover .modern-icon-container {
+  background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+  color: white;
+  animation: pulse 1s ease infinite;
+}
+
+.modern-card-title {
+  font-size: 1.5rem;
+  color: #2a2d7c;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.modern-card-text {
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.7;
+  text-align: center;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+  .modern-title {
+    font-size: 2.2rem;
+  }
+  
+  .modern-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .modern-cards-container {
+    grid-template-columns: 1fr;
+  }
+}

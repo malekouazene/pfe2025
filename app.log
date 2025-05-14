@@ -1,0 +1,8 @@
+2025-04-11 15:45:53,995 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-11 15:45:53,999 - apscheduler.scheduler - INFO - Added job "scan_all_documents" to job store "default"
+2025-04-11 15:45:54,000 - apscheduler.scheduler - INFO - Scheduler started
+2025-04-11 15:45:54,091 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.8:5000
+2025-04-11 15:45:54,094 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
