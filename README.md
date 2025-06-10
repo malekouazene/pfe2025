@@ -1,4 +1,4 @@
-# 🧠 Knowledge Management System - Cloud Native Architecture
+#  Knowledge Management System - Cloud Native Architecture
 
 Ce projet regroupe plusieurs microservices dans le cadre d’un système de gestion des connaissances basé sur une architecture Cloud Native. Chaque service a une responsabilité précise et communique avec les autres via API.
 
